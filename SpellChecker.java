@@ -10,8 +10,15 @@ public class SpellChecker
       
       // WRITE Your Methods HERE!
       public void print10(){
-        for(int i = 0; i<10;i++){
+        /*for(int i = 0; i<10;i++){
           System.out.println(dictionary[i]);
+        }*/
+        int count = 0;
+        for(String str : dictionary){
+          if(count <10){
+            System.out.println(str);
+          }
+          count++;
         }
      }
      public boolean spellcheck(String word){
